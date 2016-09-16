@@ -1,0 +1,89 @@
+<div class="content" id="lab-article-section-6-content">
+<!-- <title>Quiz on Nand Nor</title>-->
+<center><a href="#post"><img src="../../post_quiz.jpg"/></a></center><br/>
+<center><a href="#pre"><img src="../../pre_quiz.jpg"/></a></center><br/><hr/><hr/>
+<a name="pre"><h1><b>Pre_Quiz</b></h1></a>
+<!-- <font size="3"> -->
+<ul>
+<li>Draw truth table for NAND and NOR gate.</li>
+<li>Write the combinations of input for which NAND and NOR gate behaves exactly the same.</li>
+<li>How can a NAND gate can be cinverted to behave as an inverter?</li>
+<li>What are the driving volage range for n-switch and p-switch respectively?</li>
+<li>What is the advantage of making Karnaugh Map of any combinational logic?</li>
+</ul>
+<!-- </font> -->
+<a name="post"><h1><b>Post_Quiz</b></h1></a><hr/><br/>
+<!-- <font size="3"> -->
+<form name="quiz">
+<ol>
+<li><b>Identify the symbol for NAND gate.</b><br/>
+<span id="correct1"><input name="q1" type="radio" value="correct"/><img src="../../nand.jpg"/></span><br/>
+<input name="q1" type="radio" value="wrong"/><img src="../../vlsi_images/inv.jpg"/><br/>
+<input name="q1" type="radio" value="wrong"/><img src="../../vlsi_images/not.jpg"/><br/>
+<input name="q1" type="radio" value="wrong"/><img src="../../and.jpg"/><br/>
+</li>
+<hr/>
+<li><b>Identify the symbol for NOR gate.</b><br/>
+<input name="q2" type="radio" value="wrong"/><img src="../../and.jpg"/><br/>
+<input name="q2" type="radio" value="wrong"/><img src="../../nand.jpg"/><br/>
+<span id="correct2"><input name="q2" type="radio" value="correct"/><img src="../../nor.jpg"/></span><br/>
+<input name="q2" type="radio" value="wrong"/><img src="../../or.jpg"/><br/>
+</li>
+<hr/>
+<li><b>How do we represent <img src="../../vlsi_images/bar.jpg"/> with n-devices?</b><br/>
+<input name="q3" type="radio" value="wrong"/>series connection of n-devices with input A and input B<br/>
+<span id="correct3"><input name="q3" type="radio" value="correct"/>parallel connection of p-devices with input A and input B</span><br/>
+<input name="q3" type="radio" value="wrong"/>combination of series and parallel connecton of n-devices<br/>
+<input name="q3" type="radio" value="wrong"/>none<br/>
+</li>
+<hr/>
+<li><b>What is the correct representation (in terms of switches) for two n-devices connected in series having inputs 0 &amp; 1?</b><br/>
+<input name="q4" type="radio" value="wrong"/><img src="../../vlsi_images/n00.jpg"/><br/>
+<input name="q4" type="radio" value="wrong"/><img src="../../vlsi_images/n10.jpg"/> <br/>
+<input name="q4" type="radio" value="wrong"/><img src="../../vlsi_images/n11.jpg"/> <br/>
+<span id="correct4"><input name="q4" type="radio" value="correct"/><img src="../../vlsi_images/n01.jpg"/><br/>
+</span></li>
+<hr/>
+<li><b>What is the correct representation (in terms of switches) for two p-devices connected in series having both inputs as 1?</b><br/>
+<input name="q5" type="radio" value="wrong"/><img src="../../vlsi_images/p00.jpg"/><br/>
+<span id="correct5"><input name="q5" type="radio" value="correct"/>NMOS in parallel and PMOS in series</span><br/>
+<input name="q5" type="radio" value="wrong"/>Both NMOS and PMOS in parallel<br/>
+<input name="q5" type="radio" value="wrong"/>Both NMOS and PMOS in series<br/>
+</li>
+<hr/>
+<li><b>Which of the following Boolean expression is represented by the given karnaugh map?</b><br/><center><img src="../../vlsi_images/kar1.jpg"/></center><br/>
+<span id="correct6"><input name="q6" type="radio" value="correct"/>B</span><br/>
+<input name="q6" type="radio" value="wrong"/>A<br/>
+<input name="q6" type="radio" value="wrong"/>A+B<br/>
+<input name="q6" type="radio" value="wrong"/>AB<br/>
+</li>
+<hr/>
+<li><b>Which of the following Boolean expression is represented by the given karnaugh map?</b><br/><center><img src="../../vlsi_images/kar2.jpg"/></center><br/>
+<input name="q7" type="radio" value="wrong"/>AB<br/>
+<input name="q7" type="radio" value="wrong"/>BC<br/>
+<span id="correct7"><input name="q7" type="radio" value="correct"/>AC</span><br/>
+<input name="q7" type="radio" value="wrong"/>ABC<br/>
+</li>
+<hr/>
+<li><b>Which combination of logic gates is correct for the expression ABCD?</b><br/>
+<input name="q8" type="radio" value="wrong"/><img src="../../vlsi_images/t1.jpg"/><br/>
+<input name="q8" type="radio" value="wrong"/><img src="../../vlsi_images/t2.jpg"/><br/><br/><br/>
+<span id="correct8"><input name="q8" type="radio" value="correct"/>Both a &amp; b</span><br/><br/><br/>
+<input name="q8" type="radio" value="wrong"/>None<br/>
+</li>
+<hr/>
+<li><b>Which combination of logic gates is correct for the following expression?<br/></b><center><img src="../../vlsi_images/exp1.jpg"/></center><br/>
+<input name="q9" type="radio" value="wrong"/><img src="../../vlsi_images/t3.jpg"/><br/>
+<input name="q9" type="radio" value="wrong"/><img src="../../vlsi_images/t4.jpg"/><br/><br/><br/>
+<input name="q10" type="radio" value="wrong"/>none of the above<br/><br/><br/>
+<span id="correct9"><input name="q9" type="radio" value="correct"/>both a &amp; b</span><br/>
+</li>
+<hr/>
+</ol>
+<input onclick="checkQuiz()" type="button" value="check quiz"/>
+<input onclick="window.location.reload();document.quiz.reset();" type="button" value="Reset"/>
+<hr/>
+<textarea cols="80" name="output" rows="10"></textarea>
+</form>
+<!-- </font> -->
+</div>

@@ -1,0 +1,26 @@
+<div class="content" id="lab-article-section-3-content">
+<p align="justify">
+<!-- <font size="3"> -->
+</p><p>Having gained sufficient knowledge about series and parallel connection, we now move towards desining transistor level schematic for any given combinational logic. This is done by analysing the kmap of the given combination for p- and n-switches and then deducing the required series or parallel combination.The following example will give you an idea about how to go for designing a combinational logic using transistors.we want to design transistor level schematic of <span style="text-decoration: overline">(AB+CD)</span> </p><br/>
+<h3><u>K-MAP</u></h3><br/>
+<img src="../../kmap_xor.png"/>
+<!-- <font size="3"> -->
+<h3><u>IMPLEMENTATION</u> <u>FOR</u> <u>N-SWITCHES</u></h3>
+<img src="../../nmos_imp.jpg"/>
+		The series combination of A and B is in parallel with the series combination of C and D.
+		<h3><u>IMPLEMENTATION</u> <u>FOR</u> <u>P-SWITCHES</u></h3>
+<img src="../../pmos_imp.jpg"/> 
+		The parallel combination of A and B is in series with the parallel combination of C and D.
+		<p>The complete design will be as shown in the figure below</p><br/><img src="../../vlsi_images/logic.jpg"/>
+<!-- let say we dont have bar then what do we need to add in aur schematic----make using php logic -->
+<h3>XOR</h3>
+
+		A ⊕ B = A<span style="text-decoration: overline">B</span> + <span style="text-decoration: overline">A</span>B <br/>
+<span style="text-decoration:overline">A</span> is analogous to C and <span style="text-decoration:overline">B</span> is analogous to D.
+		If implementation is done according to the example described above we would require 5 NMOS and 5 PMOS.<br/> 4 NMOS and PMOS for implementation of complement of A<font style="text-decoration: overline">B</font>+<font style="text-decoration: overline">A</font>B <br/>and 1 pair for the inverter. <br/>.Now,think of a method to reduce the number of transistor. 1 pair needed for inverting can be reduced if XOR is implemented as the complement of XNOR.<br/><br/>
+<h3>XNOR</h3>
+<span style="text-decoration: overline"> A ⊕ B</span>
+
+		in the similar way xnor if implemented as complement of A ⊕ B rather than AB+<span style="text-decoration: overline">A</span> <span style="text-decoration: overline">B</span> would require 4 NMOS and PMOS.In that case <span style="text-decoration:overline">B</span> would be analougos to B in the above example,<span style="text-decoration:overline">A</span> to C and B to D.
+<!-- </font> -->
+</div>

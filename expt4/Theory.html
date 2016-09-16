@@ -1,0 +1,32 @@
+<div class="content" id="lab-article-section-3-content">
+<p align="justify">
+<font size="3">
+<p>In this experiment, our goal is to calculate the propagation delay when some load is driven by a chain of inverters. To start with, let us consider simple case of a single inverter driving a capacitative load <b>C<sub>L</sub></b> as shown in the following figure</p><br/>
+</font></p><center><img src="../../t51.jpg"/></center><br/>
+<p>Now we want to optimize size of the inverter, x, when driven by a source resistance 
+<b>R<sub>s</sub></b> 
+and driving a load of 
+<b>C<sub>L</sub></b>
+.</p><br/>
+<p>To drive <b>C<sub>L</sub></b> fastly, we can make inverter size very large but then <b>R<sub>s</sub></b> will become very slow while driving such large size inverter as its input capacitance will be very large on increasing size by large amount.</p><br/>
+<p>If we reduce the size of an inverter and make it very small such that <b>R<sub>s</sub></b> drive it very quickly, then the delay to drive load capacitance will increase. So there is an optimal point in between these two conditions and we will see that optimal point further in this section</p><br/>
+<p>One thing that should be remebered is the effect of scaling of size of an inverter on its resistance and capacitance value. Suppose the size of an inverter has been scaled by a factor x, then its resistance will get reduced by the same factor while its capacitance will be increased by the same factor.</p><br/>
+<p>For getting optimum size of inverter, we differentiate the delay with respect to size. And when we put that value of size in the expressions of delay at the input of an inverter and delay in output, we get the same expressions. So we can summarize the optimal result for the above figure as below:</p><br/>
+<p></p><p></p><p><b>An inverter is scaled for optimium delay when the RC product of its input capacitance and the external resistance driving it, equals the RC product of its output resistance and the external load that it drives.</b></p><br/>
+<p>Now we will extend this concept for a chain of inverters as shown below</p><br/>
+<center><img src="../../t52.jpg"/></center><br/>
+<p>
+As we have seen  earlier that to minimize delay, the RC product at input and output of an inverter should be same. Similar is the case with chain of inverters. Therefor the optimum size of each inverter is the geometric mean of its neighbors - meaning that if each inverter is sized up by the same factor x with respect to the preceding inverter, it will have the same effective RC product and hence the same delay.
+</p><br/>
+<p>The following figure shows the relationship in sizes of a chain of five inverters</p><br/>
+<center><img src="../../t53.jpg"/></center><br/>
+<p>Now we just have to see what is the value of x. The value of x derived by differentiating delay expression is nth root of C<sub>L</sub>/C<sub>g1</sub> where </p><br/>
+    
+n is equal to the number of inverters in the chain  <br/>
+    
+C<sub>L</sub> is equal to the load capacitance<br/>
+    
+C<sub>g1</sub> is equal to the input gate capacitance of the first inverter<br/>
+<p>So expression for x is shown below</p><br/>
+<center><img src="../../t54.jpg"/></center><br/>
+</div>

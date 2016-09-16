@@ -1,0 +1,88 @@
+<div class="content" id="lab-article-section-3-content">
+<p align="justify">
+<!-- <font size="3"> -->
+</p><p>Transmission gate is the parallel combination of NMOS and PMOS. When control signal (signal A) is high then transmission gate passes signal from input to output.  NMOS passes good zero  and PMOS passes good one, putting NMOS and PMOS in parallel produces a transmission gate that passes both logic levels good.</p><br/><br/>
+<center><img src="../../passIntro1.jpg"/></center><br/>
+<h3> PASS TRANSISTOR LOGIC THROUGH NMOS </h3><br/>
+<p>As we already know NMOS permits flow of current from source to drain when the input to the gate is 1 therefore when control variable is equal to 1 the input at the source end appears on the drain.</p><br/>
+<table align="center" border="4" cellpadding="0" cellspacing="4">
+<tr>
+<td bgcolor="#ffffff"><b>IN</b></td>
+<td bgcolor="#ffffff"><b>CONTROL</b></td>
+<td bgcolor="#ffffff"><b>OUT</b></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#9966ff">0</td>
+<td align="center" bgcolor="#9966ff">0</td>
+<td align="center" bgcolor="#9966ff">X</td>
+</tr>
+<tr>
+<td align="center" bgcolor="#9966ff">1</td>
+<td align="center" bgcolor="#9966ff">0</td>
+<td align="center" bgcolor="#9966ff">X</td>
+</tr>
+<tr>
+<td align="center" bgcolor="#9966ff">0</td>
+<td align="center" bgcolor="#9966ff">1</td>
+<td align="center" bgcolor="#9966ff">0</td>
+</tr>
+<tr>
+<td align="center" bgcolor="#9966ff">1</td>
+<td align="center" bgcolor="#9966ff">1</td>
+<td align="center" bgcolor="#9966ff">1</td>
+</tr>
+</table><br/>
+<h3> PASS TRANSISTOR LOGIC THROUGH PMOS </h3><br/>
+<p>As we already know PMOS permits flow of current from source to drain when the input to the gate is 0 therefore when control variable is equal to 0 the input at the source end appears on the drain.</p><br/>
+<table align="center" border="4" cellpadding="0" cellspacing="4">
+<tr>
+<td bgcolor="#ffffff"> <b>IN</b></td>
+<td bgcolor="#ffffff"><b>CONTROL</b></td>
+<td bgcolor="#ffffff"><b>OUT</b></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#9966ff">0</td>
+<td align="center" bgcolor="#9966ff">0</td>
+<td align="center" bgcolor="#9966ff">0</td>
+</tr>
+<tr>
+<td align="center" bgcolor="#9966ff">1</td>
+<td align="center" bgcolor="#9966ff">0</td>
+<td align="center" bgcolor="#9966ff">1</td>
+</tr>
+<tr>
+<td align="center" bgcolor="#9966ff">0</td>
+<td align="center" bgcolor="#9966ff">1</td>
+<td align="center" bgcolor="#9966ff">X</td>
+</tr>
+<tr>
+<td align="center" bgcolor="#9966ff">1</td>
+<td align="center" bgcolor="#9966ff">1</td>
+<td align="center" bgcolor="#9966ff">X</td>
+</tr>
+</table><br/><br/>
+<b>Click on the following image to see the steps in making of complementary pass transistor</b>
+<center><a height="150" href="pass.wmv" target="blank" width="300"><img src="../../ps3.jpg"/></a></center><br/>
+<p>The above shown pass transistor will now be able to give a good one as well as good zero. At the time when S=1, both will be able to pass so whether the input signal is zero or one it will be passed almost as it is.
+		</p><br/><br/>
+<h3>MULTIPLEXER</h3><br/>
+<p>The multiplexer selects one of many analog or digital input. A  multiplexer with 2<sup>n</sup> input lines have n select lines. The select lines can either be 0 or 1. Depending on the binary number(formed by combination of 1s and 0s) at the select lines. One of the input is selected and it is passed on to the output.</p>
+
+		The block diagram and truth table of the 2 input multiplexer is given below:
+		<img align="center" height="300" src="../../symb_2_mux.jpg" width="300"/>
+<img center="" height="300" src="../../truth_table_2mux.jpg" width="300 align="/>
+<p>The logical expression for output can be <b>AS'+BS</b> . If we implement this logic using nands and nors then no. of transistor required would be 5.We can use the knowledge of pass transistors,control variables an pass variables. </p>
+<p>
+</p><ul type="disc"><br/><br/>
+<li> Choice of control variable and pass variable??<br/> <br/>Select input should be the control variable and data inputs can act as pass variables</li><br/>
+<li> Whether to use nmos/pmos pass transistor ??<br/> <br/>Since nmos is preferable in passing logic 0 and pmos is preffered in passing logic 1. We use a combination of both with complementing control variables. This ensures that both are on simultaneously and any value applied at the input appears at the output</li>
+</ul>
+<img align="center" height="300" src="../../pass_transistor_s1.jpg" width="300"/>
+
+			The upper combination of nmos and pmos is switched on and hence B is passed .Similarily if select variable is 0 A is passed.
+        
+
+
+
+
+</div>

@@ -1,0 +1,117 @@
+<div class="content" id="lab-article-section-6-content">
+<!-- <font size="3">
+<title>Quiz on Inverter</title> -->
+<center><a href="#pre"><img src="../../pre_quiz.jpg"/></a></center><br/>
+<center><a href="#post"><img src="../../post_quiz.jpg"/></a></center><br/>
+<a name="pre"><h1><b>Pre_Quiz</b></h1></a><hr/><br/>
+<ul>
+<li>How is verilog different from software programming language?</li><br/>
+<li> Explain what do you mean by positive edge reset or negative edge clear?</li>
+</ul>
+<br/>
+<a name="post"><b><h1><b>Post_Quiz</b></h1></b></a><br/>
+<form name="quiz">
+<ol>
+<li><b>Which is correct assignment for two input and gate shown in Fig.1?</b><br/>
+<center><img src="../../exp9QuizFigures/image003.gif"/> </center><br/>
+<input name="q1" type="radio" value="wrong"/>    Wire Y; assign Y = A x B ;<br/>
+<span id="correct1"><input name="q1" type="radio" value="correct"/>    Wire Y; assign Y = A &amp; B ;</span><br/>
+<input name="q1" type="radio" value="wrong"/>    Wire Y; assign Y = A and B ;<br/>
+<input name="q1" type="radio" value="wrong"/>    Wire Y; assign A &amp; B = Y ;<br/><br/>
+</li>
+<li><b>Which is correct assignment for try state buffer shown in Fig.2?</b><br/>
+<center><img src="../../exp9QuizFigures/image005.gif"/> </center><br/>
+<input name="q2" type="radio" value="wrong"/>    Tri Y ; assign Y = (ENB) : A : Z ;<br/>
+<input name="q2" type="radio" value="wrong"/>    Y = (ENB) ? A : Z ;<br/>
+<input name="q2" type="radio" value="wrong"/>    Tri Y ; assign Y = (ENB) ? A : Z ;<br/>
+<span id="correct2"><input name="q2" type="radio" value="correct"/>    Tri Y ;  Y = (ENB) ? A : Z ;</span><br/><br/>
+</li>
+<li><b>Which is not a logical operator ?</b><br/>
+<span id="correct3"><input name="q3" type="radio" value="correct"/></span>     |       logical  OR<br/>
+<input name="q3" type="radio" value="wrong"/>    ||     logical OR<br/>
+<input name="q3" type="radio" value="wrong"/>    &amp;&amp;      logical AND<br/>
+<input name="q3" type="radio" value="wrong"/>    !    logical  NOT<br/><br/>
+</li>
+<li><b>Which is/are bitwise operator ? <br/>
+    	A) &amp; <br/>
+    	B) ~ <br/>
+    	C) | <br/>
+    	D) ~^ <br/></b><br/>
+<input name="q4" type="radio" value="wrong"/>    Only A. <br/>
+<input name="q4" type="radio" value="wrong"/>    A and B.<br/>
+<input name="q4" type="radio" value="wrong"/>    A, B and C.<br/>
+<span id="correct4"><input name="q4" type="radio" value="correct"/>    All Of These.</span><br/><br/>
+</li>
+<li><b>Which is not a correct statement?<br/><br/>
+
+    (A)  &gt;&gt;    is a shift right operator. <br/>
+
+    (B)  &amp;      is a reduction operator  <br/>
+
+    (C)  ===   is a case equality operator <br/>
+
+    (D)   Y = (sel) ? A : B;   is an example of conditional operator</b><br/><br/>
+<input name="q5" type="radio" value="wrong"/>    A<br/>
+<span id="correct5"><input name="q5" type="radio" value="correct"/>    None</span><br/>
+<input name="q5" type="radio" value="wrong"/>    All Of These.<br/>
+<input name="q5" type="radio" value="wrong"/>    A, B and C.<br/><br/>
+</li>
+<li><b>Which is/are correct verilog code for Fig.3?</b><br/><br/>
+<center><img src="../../exp9QuizFigures/Exp9-Q6.jpg"/></center><br/>
+<input name="q6" type="radio" value="wrong"/>    Only A.<br/>
+<input name="q6" type="radio" value="wrong"/>    Only B.<br/>
+<input name="q6" type="radio" value="wrong"/>    C and D.<br/>
+<span id="correct6"><input name="q6" type="radio" value="correct"/>    A and B.</span><br/><br/>
+</li>
+<li><b>Which is correct verilog code for Fig.4?</b><br/>
+<center><img src="../../exp9QuizFigures/image009.gif"/></center><br/>
+<center><img src="../../exp9QuizFigures/Exp9-Q7.jpg"/></center><br/><br/>
+<input name="q7" type="radio" value="wrong"/>    Only A.<br/>
+<input name="q7" type="radio" value="wrong"/>    Only B.<br/>
+<span id="correct7"><input name="q7" type="radio" value="correct"/>    Only C.</span><br/>
+<input name="q7" type="radio" value="wrong"/>    A and D.<br/><br/>
+</li>
+<li><b>Which is not a correct port assignment for a module?</b><br/>
+<center><img src="../../exp9QuizFigures/Exp9-Q8.jpg"/></center><br/><br/>
+<input name="q8" type="radio" value="wrong"/>    (i)<br/>
+<input name="q8" type="radio" value="wrong"/>    (ii)<br/>
+<input name="q8" type="radio" value="wrong"/>    (iii)<br/>
+<span id="correct8"><input name="q8" type="radio" value="correct"/>    (iv)</span><br/><br/>
+</li>
+<li><b>Which is/are not correct escaped characters?<br/>
+    (A)   \n for new line <br/>
+    (B)   \t for new tab  <br/>
+    (C)   %% for %   <br/>
+    (D)   \ for \ <br/>
+    (E)   \" for " <br/>
+    (F)   \s for string </b><br/><br/>
+<input name="q9" type="radio" value="wrong"/>    A and B.<br/>
+<input name="q9" type="radio" value="wrong"/>    C and D.<br/>
+<input name="q9" type="radio" value="wrong"/>    Only E. <br/>
+<span id="correct9"><input name="q9" type="radio" value="correct"/></span>    Only F.<br/><br/>
+</li>
+<li><b>Which is/are showing incorrect result for given operands and operator ?</b><br/>
+    (i) 1 &gt; 0 -&gt; 1<br/>
+             'b1 x 1  x<br/>
+              10  x<br/><br/>
+    (ii) 4'b 1z0x == 4'b 1z0x -&gt; x<br/>
+                  4'b 1z0x != 4'b 1z0x -&gt; x<br/><br/>
+    (iii) One multi-bit operand -&gt; One single-bit result<br/>
+               a = 4'b1001;<br/>
+                c = |a; // c = 1|0|0|1 = 1<br/><br/>
+    (iv) 4'b 1z0x === 4'b 1z0x -&gt; 1<br/>
+                  4'b 1z0x !== 4'b 1z0x -&gt; 0<br/><br/>
+<br/>
+<input name="q10" type="radio" value="wrong"/>    (i), (ii) and (iii).<br/>
+<input name="q10" type="radio" value="wrong"/>    Only (i).<br/>
+<input name="q10" type="radio" value="wrong"/>    All of these<br/>
+<span id="correct10"><input name="q10" type="radio" value="correct"/>    None</span><br/><br/>
+</li>
+</ol>
+<input onclick="checkQuiz()" type="button" value="check quiz"/>
+<input onclick="window.location.reload();document.quiz.reset();" type="button" value="Reset"/>
+<hr/>
+<textarea cols="80" name="output" rows="10"></textarea>
+</form>
+<!-- </font> -->
+</div>

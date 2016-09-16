@@ -1,0 +1,82 @@
+<div class="content" id="lab-article-section-6-content">
+<!-- <font size="3">
+<title>Quiz on Gate sizing</title> -->
+<form name="quiz">
+<ol>
+<li><b>
+Can we reduce delay to zero? 
+</b><br/>
+<input name="q1" type="radio" value="wrong"/>Yes<br/>
+<span id="correct1"><input name="q1" type="radio" value="correct"/>No</span><br/>
+<input name="q1" type="radio" value="wrong"/>Yes in most of the cases<br/>
+<input name="q1" type="radio" value="wrong"/>Yes in very few cases<br/><br/>
+</li>
+<li><b>What you mean by delay?</b><br/>
+<input name="q2" type="radio" value="wrong"/>time to correctly access the input<br/>
+<input name="q2" type="radio" value="wrong"/>time to correctly access the output<br/>
+<input name="q2" type="radio" value="wrong"/>average rise time and fall time<br/>
+<span id="correct2"><input name="q2" type="radio" value="correct"/>time taken for the output to come after the input has been captured</span><br/><br/>
+</li>
+<li>
+<b>The optimum size of each inverter is ________ of its neighbours</b><br/>
+<span id="correct3"><input name="q3" type="radio" value="correct"/>geometric mean</span><br/>
+<input name="q3" type="radio" value="wrong"/>arithmetic mean<br/>
+<input name="q3" type="radio" value="wrong"/>geometric or arithmetic mean<br/>
+<input name="q3" type="radio" value="wrong"/>none of the above<br/><br/>
+</li>
+<li>
+<b>What does C<sub>g1</sub> corresponds to in the following formula?</b><br/>
+<center><img src="../../t54.jpg"/></center>
+<input name="q4" type="radio" value="wrong"/>input gate capacitance of the last inverter driving capacitative load<br/>
+<input name="q4" type="radio" value="wrong"/>sum of input capacitances of all the inverter in series<br/>
+<span id="correct4"><input name="q4" type="radio" value="correct"/>input gate capacitance of first inverter in series</span><br/>
+<input name="q4" type="radio" value="wrong"/>None of the above<br/><br/>
+</li>
+<li><b>If the gate size is increased by n then what will be the effect on its resistance?</b><br/>
+<input name="q5" type="radio" value="wrong"/>increases by n<br/>
+<span id="correct5"><input name="q5" type="radio" value="correct"/>decreases by n</span><br/>
+<input name="q5" type="radio" value="wrong"/>decreases by n<sup>2</sup><br/>
+<input name="q5" type="radio" value="wrong"/>remains constant<br/><br/>
+</li>
+<li><b>If the gate size is increased by n then what will be the effect on its capacitance?</b><br/>
+<input name="q6" type="radio" value="wrong"/>increases by n<sup>2</sup><br/>
+<span id="correct6"><input name="q6" type="radio" value="correct"/>increases by n</span><br/>
+<input name="q6" type="radio" value="wrong"/>decreases by n<br/>
+<input name="q6" type="radio" value="wrong"/>remains constant<br/><br/>
+</li>
+<li>
+<b>Choose the correct statement from the following.<br/></b>
+<input name="q7" type="radio" value="wrong"/>All the inveters in series are kept to be of same size for minimum delay<br/>
+<input name="q7" type="radio" value="wrong"/>The inverter size does not matter as long as the inverter driving the load has very big size<br/>
+<input name="q7" type="radio" value="wrong"/>The inverter size does not matter as long as the inverter driving the load has very small size<br/>
+<span id="correct7"><input name="q7" type="radio" value="correct"/>The size of the inverter driving the load is maximum of all and is some multiple of size of the previous inverters</span><br/>
+</li>
+<li>
+<b>For minimm delay, what is the no of inverters in the chain connected in series?</b><br/>
+<input name="q8" type="radio" value="wrong"/>4<br/>
+<input name="q8" type="radio" value="wrong"/>5<br/>
+<input name="q8" type="radio" value="wrong"/>6<br/>
+<span id="correct8"><input name="q8" type="radio" value="correct"/>need to calculate according to the situation given, it is not fixed.</span><br/><br/>
+</li>
+<li>
+<b>Let a be the stage ratio of an inverter chain. What is its optimum value to drive a load capacitor with minimum  delay?</b><br/>
+<input name="q9" type="radio" value="wrong"/>4<br/>
+<input name="q9" type="radio" value="wrong"/>1/e<br/>
+<input name="q9" type="radio" value="wrong"/>2<br/>
+<span id="correct9"><input name="q9" type="radio" value="correct"/>e</span><br/><br/>
+</li>
+<li>
+<b>In the above question, if parasitic capacitances are taken into consideration then what is the optimum value of a? </b>
+<span id="correct10"><input name="q10" type="radio" value="correct"/>4</span><br/>
+<input name="q10" type="radio" value="wrong"/>e<br/>
+<input name="q10" type="radio" value="wrong"/>1/e<br/>
+<input name="q10" type="radio" value="wrong"/>2<br/><br/>
+</li>
+</ol>
+<input onclick="checkQuiz()" type="button" value="check quiz"/>
+<input onclick="window.location.reload();document.quiz.reset();" type="button" value="Reset"/>
+<hr/>
+<textarea cols="80" name="output" rows="10"></textarea>
+</form>
+<!-- </font> -->
+</div>

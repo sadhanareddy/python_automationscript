@@ -1,0 +1,83 @@
+<div class="content" id="lab-article-section-6-content">
+<!-- <title>Quiz on Inverter</title>-->
+<!-- <font size="3"> -->
+<form name="quiz">
+<ol>
+<li><b>Identify which of the following can behave as pass transistors.</b><br/>
+<input name="q1" type="radio" value="wrong"/><img src="../../ps1.jpg"/><br/>
+<input name="q1" type="radio" value="wrong"/><img src="../../ps2.jpg"/><br/>
+<input name="q1" type="radio" value="wrong"/><img src="../../ps3.jpg"/><br/>
+<span id="correct1"><input name="q1" type="radio" value="correct"/>All of the above</span><br/>
+</li>
+<hr/>
+<li><b>Identify the correct statement from the following.</b><br/>
+<input name="q2" type="radio" value="wrong"/>PMOS passes from source to drain when logic 1 is applied to gate.<br/>
+<span id="correct2"><input name="q2" type="radio" value="correct"/>NMOS passes from source to drain when logic 1 is applied to gate</span><br/>
+<input name="q2" type="radio" value="wrong"/>PMOS always passes from source to drain whatever be the gate input<br/>
+<input name="q2" type="radio" value="wrong"/>NMOS always passes from source to drain whatever be the gate input<br/><br/>
+</li>
+<hr/>
+<li><b>What can be designed using pass transistors?</b><br/>
+<input name="q3" type="radio" value="wrong"/>Any combinational logic<br/>
+<input name="q3" type="radio" value="wrong"/>Multiplexer<br/>
+<span id="correct3"><input name="q3" type="radio" value="correct"/>Both</span><br/>
+<input name="q3" type="radio" value="wrong"/>None<br/><br/>
+</li>
+<hr/>
+<li><b>Which gate is designed in the following picture using pass transistor?<br/><img src="../../pand.jpg"/></b><br/>
+<input name="q4" type="radio" value="wrong"/>NOR gate<br/>
+<input name="q4" type="radio" value="wrong"/>NAND gate<br/>
+<input name="q4" type="radio" value="wrong"/>OR gate<br/>
+<span id="correct4"><input name="q4" type="radio" value="correct"/>AND gate</span><br/><br/>
+</li>
+<hr/>
+<li><b>Which gate is designed in the following picture using pass transistor?<br/><img src="../../por.jpg"/></b><br/>
+<input name="q5" type="radio" value="wrong"/>NOR gate<br/>
+<input name="q5" type="radio" value="wrong"/>NAND gate<br/>
+<span id="correct5"><input name="q5" type="radio" value="correct"/>OR gate</span><br/>
+<input name="q5" type="radio" value="wrong"/>AND gate<br/><br/>
+</li>
+<hr/>
+<li><b>Will n pass transistor and complementary pass transistor behave similarly for passing one?</b><br/>
+<input name="q6" type="radio" value="wrong"/>No<br/>
+<span id="correct6"><input name="q6" type="radio" value="correct"/>Yes</span><br/>
+<input name="q6" type="radio" value="wrong"/>May be in some situations<br/>
+<input name="q6" type="radio" value="wrong"/>can not say<br/>
+</li>
+<hr/>
+<li><b>Are the two circits shown below same?</b><br/>
+<img src="../../cl1.jpg"/><img src="../../pl1.jpg"/><br/>
+<span id="correct7"><input name="q7" type="radio" value="correct"/>Yes</span><br/>
+<input name="q7" type="radio" value="wrong"/>No<br/>
+<input name="q7" type="radio" value="wrong"/>Cannot be said<br/>
+</li>
+<hr/>
+<li><b>What is the correct expression corresponding to above circuits?</b><br/>
+<input name="q8" type="radio" value="wrong"/>A+B<br/>
+<input name="q8" type="radio" value="wrong"/>AS0 + B<br/>
+<input name="q8" type="radio" value="wrong"/>A + BS0<br/>
+<span id="correct8"><input name="q8" type="radio" value="correct"/>AS0' + BS0</span><br/><br/>
+</li>
+<hr/>
+<li><b>_______ input mux can be formed using n select lines.</b><br/>
+<input name="q9" type="radio" value="wrong"/>n<br/>
+<input name="q9" type="radio" value="wrong"/>2*n<br/>
+<span id="correct9"><input name="q9" type="radio" value="correct"/>2<sup>n</sup></span><br/>
+<input name="q9" type="radio" value="wrong"/>None of the above<br/><br/>
+</li>
+<hr/>
+<li><b>Which gives good zero</b><br/>
+<input name="q10" type="radio" value="wrong"/>Nmos Pass transistor<br/>
+<span id="correct10"><input name="q10" type="radio" value="correct"/>Both pmos and complementary pass transistor</span><br/>
+<input name="q10" type="radio" value="wrong"/>Pmos pass transistor<br/>
+<input name="q10" type="radio" value="wrong"/>None of the above<br/>
+</li>
+<hr/>
+</ol>
+<input onclick="checkQuiz()" type="button" value="check quiz"/>
+<input onclick="window.location.reload();document.quiz.reset();" type="button" value="Reset"/>
+<hr/>
+<textarea cols="80" name="output" rows="10"></textarea>
+</form>
+<!-- </font> -->
+</div>

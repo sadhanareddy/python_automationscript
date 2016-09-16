@@ -1,0 +1,33 @@
+<div class="content" id="experiment-article-section-1-content">
+<p align="justify">
+<!-- <font size="3"> -->
+</p><h3>D-LATCH</h3><br/>
+<p>Latch is an electronic device that can be used to store one bit of information. The D latch is used to capture, or 'latch' the logic level which is present on the Data line when the clock input is high. If the data on the D line changes state while the clock pulse is high, then the output, Q, follows the input, D. When the CLK input falls to logic 0, the last state of the D input is trapped and held in the latch.</p>
+<h4>Timing diagram</h4>
+<img height="500" src="../../d_latch_td.jpg" width="500"/>
+<p>
+From the timing diagram it is clear that the output Q's waveform resembles that of input D's waveform when the clock is high whereas when the clock is low Q retains the previous value of D (the value before clock dropped down to 0) </p>
+<br/>
+<h3>D FLIP FLOP</h3><br/>
+<p>The working of D flip flop is similar to the D latch except that the output of D Flip Flop takes the state of the D input at the moment of a positive edge at the clock pin (or negative edge if the clock input is active low) and delays it by one clock cycle. That's why, it is commonly known as a delay flip flop. The D FlipFlop can be interpreted as a delay line or zero order hold. The advantage of the D flip-flop over the D-type "transparent latch" is that the signal on the D input pin is captured the moment the flip-flop is clocked, and subsequent changes on the D input will be ignored until the next clock event.</p><br/>
+<h4>Timing diagram</h4>
+<img height="500" src="../../d_ff_td.jpg" width="500"/>
+<p>
+From the timing diagram it is clear that the output Q changes only at the positive edge.At each positive edge the output Q becomes equal to the input D at that instant and this value of Q is held untill the next positive edge </p>
+<p>
+<br/>
+<b>Characteristics and applications of D latch and D Flip Flop : </b><br/><br/>
+        1. D-latch is a level Triggering device while D Flip Flop is an Edge triggering device.<br/><br/>
+        2. The disadvantage of the D FF is its circuit size, which is about twice as large as that of a D latch. That's why, delay and power consumption in Flip flop is more as compared to D latch. <br/><br/>
+        3. Latches are used as temporary buffers whereas flip flops are used as registers.<br/><br/>
+        4. Flip flop can be considered as a basic memory cell because it stores the value on the data line with the advantage of the output being synchronized to a clock.<br/><br/>
+        5. Many logic synthesis tool use only D flip flop or D latch.<br/><br/>
+        6. FPGA contains edge triggered flip flops.<br/><br/>
+        7. D flip flops are also used in finite state machines.<br/><br/>
+<br/>
+<b>Edge Triggering vs. Level Clocking</b><br/><br/>
+        1. When a circuit is edge triggered the output can change only on the rrising or falling edge of the clock. But  in the case of level-clocked, the output can change when the clock is high (or low). <br/><br/>
+        2. In edge triggering output can change only at one instant during the lock cycle; with level clocking output can change during an entire half cycle of the clock.<br/><br/>
+<!-- </font> -->
+</p>
+</div>

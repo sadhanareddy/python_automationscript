@@ -1,0 +1,105 @@
+<div class="content" id="lab-article-section-6-content">
+<!-- <font size="3">
+<title>Quiz on Inverter</title> -->
+<center><a href="#pre"><img src="../../pre_quiz.jpg"/></a></center><br/>
+<center><a href="#post"><img src="../../post_quiz.jpg"/></a></center><br/>
+<a name="pre"><h1><b>Pre_Quiz</b></h1></a><br/>
+<ul>
+<li> What is the relationship of input and output in T-FLip Flop?</li><br/>
+<li> What will be the output of a 4-bit down counter?</li><br/>
+<li> What is the difference between T-flip flop and D-flip flop?</li><br/>
+<li> What is the difference between asynchronous and synchronous counter?</li><br/>
+<li> Explain what do you mean by positive edge reset or negative edge clear?</li>
+</ul><br/>
+<a name="post"><b><h1><b>Post_Quiz</b></h1></b></a><br/>
+<form name="quiz">
+<ol>
+<li><b>Does the order of input and output ports in the argument of module matters?</b><br/>
+<input name="q1" type="radio" value="wrong"/>yes<br/>
+<span id="correct1"><input name="q1" type="radio" value="correct"/>no</span><br/>
+<input name="q1" type="radio" value="wrong"/>may matter in some situation<br/>
+<input name="q1" type="radio" value="wrong"/>may not matter in certain conditions<br/><br/>
+</li>
+<hr/>
+<br/>
+<li><b>Which of the following loops are supported by verilog?</b><br/>
+<input name="q2" type="radio" value="wrong"/>if-else loop<br/>
+<input name="q2" type="radio" value="wrong"/>for loop<br/>
+<input name="q2" type="radio" value="wrong"/>while loop<br/>
+<span id="correct2"><input name="q2" type="radio" value="correct"/>all of these</span><br/><br/>
+</li>
+<hr/>
+<br/>
+<li><b>What defines the beginning and end of a loop</b><br/>
+<span id="correct3"><input name="q3" type="radio" value="correct"/>begin----end</span><br/>
+<input name="q3" type="radio" value="wrong"/>curly brackets ()<br/>
+<input name="q3" type="radio" value="wrong"/>none of these<br/>
+<input name="q3" type="radio" value="wrong"/>both of them<br/><br/>
+</li>
+<hr/>
+<br/>
+<li><b>What defines high impedance state or floating state in verilog?</b><br/>
+<input name="q4" type="radio" value="wrong"/>1<br/>
+<input name="q4" type="radio" value="wrong"/>X<br/>
+<span id="correct4"><input name="q4" type="radio" value="correct"/>Z</span><br/>
+<input name="q4" type="radio" value="wrong"/>Both X and Z<br/><br/>
+</li>
+<hr/>
+<br/>
+<li><b>In the following figure A is input and B is output of inverter and C is clock. Tell whether inverter is working synchronously or asynchronously?</b><br/><center><img src="../../syn.jpg"/></center><br/>
+<input name="q5" type="radio" value="wrong"/>asynchronous<br/>
+<span id="correct5"><input name="q5" type="radio" value="correct"/>synchronous</span><br/>
+<input name="q5" type="radio" value="wrong"/>unpredictable<br/>
+<input name="q5" type="radio" value="wrong"/>sometimes synchronous and sometimes asynchronous<br/><br/>
+</li>
+<hr/>
+<br/>
+<li><b>In the above figure, tell whether inverter is working on positive edge or negative edge of clock?</b><br/>
+<center><img src="../../syn.jpg"/></center><br/>
+<input name="q6" type="radio" value="wrong"/>negative edge<br/>
+<span id="correct6"><input name="q6" type="radio" value="correct"/>positive edge</span><br/>
+<input name="q6" type="radio" value="wrong"/>both on positive edge and negative edge<br/>
+<input name="q6" type="radio" value="wrong"/>middle of positive and negative edge of clock<br/><br/>
+</li>
+<hr/>
+<br/>
+<li><b>In the following figure tell whether reset is synchronous or asynchronous?</b><br/>
+<center><img src="../../asyn.jpg"/></center><br/>
+<span id="correct7"><input name="q7" type="radio" value="correct"/>asynchronous</span><br/>
+<input name="q7" type="radio" value="wrong"/>synchronous<br/>
+<input name="q7" type="radio" value="wrong"/>unpredictable<br/>
+<input name="q7" type="radio" value="wrong"/>sometimes synchronous and sometimes asynchronous<br/><br/>
+</li>
+<hr/>
+<br/>
+<li><b>What is the similar system task in verilog as printf in C?</b><br/>
+<input name="q8" type="radio" value="wrong"/>$monitor<br/>
+<span id="correct8"><input name="q8" type="radio" value="correct"/>$display</span><br/><br/>
+<input name="q8" type="radio" value="wrong"/>$print<br/>
+<input name="q8" type="radio" value="wrong"/>all of these<br/><br/>
+</li>
+<hr/>
+<br/>
+<li><b>In the figure given in ques7, tell whether it is a positive edge reset or negative edge?</b><br/>
+<input name="q9" type="radio" value="wrong"/>both positive and negative edge reset<br/>
+<input name="q9" type="radio" value="wrong"/>negative edge reset<br/>
+<span id="correct9"><input name="q9" type="radio" value="correct"/>positive edge</span><br/>
+<input name="q9" type="radio" value="wrong"/>unpredictable<br/><br/>
+</li>
+<hr/>
+<br/>
+<li><b>Can we include one source file in another in verilog?</b><br/>
+<input name="q10" type="radio" value="wrong"/>no<br/>
+<span id="correct10"><input name="q10" type="radio" value="correct"/>yes using `include</span><br/>
+<input name="q10" type="radio" value="wrong"/>yes using `define<br/>
+<input name="q10" type="radio" value="wrong"/>yes by just writing the name of file in another file<br/><br/>
+</li>
+<hr/>
+</ol>
+<input onclick="checkQuiz()" type="button" value="check quiz"/>
+<input onclick="window.location.reload();document.quiz.reset();" type="button" value="Reset"/>
+<hr/>
+<textarea cols="80" name="output" rows="10"></textarea>
+</form>
+<!-- </font> -->
+</div>

@@ -1,0 +1,90 @@
+<div class="content" id="lab-article-section-6-content">
+<!-- <font size="3">
+<title>Quiz on Spice</title>-->
+<form name="quiz">
+<ol>
+<li><b>
+What frequency clock source will produce clock waveforms having a period equal to 5 us (5 microseconds)? 
+</b><br/>
+<input name="q1" type="radio" value="wrong"/>5 MHz<br/>
+<span id="correct1"><input name="q1" type="radio" value="correct"/>0.2 MHz</span><br/>
+<input name="q1" type="radio" value="wrong"/>2 MHz<br/>
+<input name="q1" type="radio" value="wrong"/>10 MHz<br/><br/>
+</li>
+<br/>
+<li><b>On what parameters do the output of D flip flop depend?</b><br/>
+<input name="q2" type="radio" value="wrong"/>independent of both previous state and input<br/>
+<input name="q2" type="radio" value="wrong"/>both on previous state and input<br/>
+<input name="q2" type="radio" value="wrong"/>only on the previous state<br/>
+<span id="correct2"><input name="q2" type="radio" value="correct"/>only on input D</span><br/><br/>
+</li>
+<br/>
+<li> <img height="300" src="../../d_latch_q.jpg" width="400"/>
+<b>The timing diagram corresponds to:</b><br/>
+<span id="correct3"><input name="q3" type="radio" value="correct"/>D latch </span><br/>
+<input name="q3" type="radio" value="wrong"/>positive edge triggered D flip flop<br/>
+<input name="q3" type="radio" value="wrong"/>negative edge triggered D flip flop <br/>
+<input name="q3" type="radio" value="wrong"/>none of them<br/><br/>
+</li>
+<br/>
+<li> <img height="300" src="../../pos_edge_d.jpg" width="400"/>
+<b>The timing diagram corresponds to</b><br/>
+<input name="q4" type="radio" value="wrong"/>D latch<br/>
+<input name="q4" type="radio" value="wrong"/>negative edge triggered flip flop<br/>
+<span id="correct4"><input name="q4" type="radio" value="correct"/>positive edge triggered</span><br/>
+<input name="q4" type="radio" value="wrong"/>None of them<br/><br/>
+</li>
+<br/>
+<li><b>Which statement is false about D latch<br/></b>
+<input name="q5" type="radio" value="wrong"/>the output follows the input everytime<br/>
+<span id="correct5"><input name="q5" type="radio" value="correct"/>the output follows the input when clock is high</span><br/>
+<input name="q5" type="radio" value="wrong"/>the output follows the input when the clock is low<br/>
+<input name="q5" type="radio" value="wrong"/>the output never follows the input<br/><br/>
+</li>
+<br/>
+<li><b>Which latch has the property of either retaining or toggling the previous value </b><br/>
+<input name="q6" type="radio" value="wrong"/>D-Latch<br/>
+<span id="correct6"><input name="q6" type="radio" value="correct"/>T-Latch</span><br/>
+<input name="q6" type="radio" value="wrong"/>SR-Latch<br/>
+<input name="q6" type="radio" value="wrong"/>None of the above<br/><br/>
+</li>
+<br/>
+<li>
+<b>Which statement below is the apt definition of flip flop<br/></b>
+<input name="q7" type="radio" value="wrong"/>latch<br/>
+<input name="q7" type="radio" value="wrong"/>coupled latch<br/>
+<input name="q7" type="radio" value="wrong"/>de-coupled latch<br/><br/>
+<span id="correct7"><input name="q7" type="radio" value="correct"/>clocked latch</span><br/>
+</li>
+<br/>
+<li>
+<b>The above figure is the gate level implementation of:</b><br/>
+<input name="q8" type="radio" value="wrong"/>SR-Latch<br/>
+<span id="correct8"><input name="q8" type="radio" value="correct"/>D-Latch</span><br/>
+<input name="q8" type="radio" value="wrong"/>T-Latch<br/>
+<input name="q8" type="radio" value="wrong"/>none of the above<br/><br/>
+</li>
+<br/>
+<li>
+<b> What kind of flip flop is generally preffered for constructing counters?<br/></b>
+<input name="q9" type="radio" value="wrong"/>JK-flip flop<br/>
+<span id="correct9"><input name="q9" type="radio" value="correct"/>T flip flop</span><br/>
+<input name="q9" type="radio" value="wrong"/>D flip flop <br/>
+<input name="q9" type="radio" value="wrong"/>none of the above<br/><br/>
+</li>
+<br/>
+<li>
+<b> What is meant by the problem of metastability in flip flop </b> <br/>
+<span id="correct10"><input name="q10" type="radio" value="correct"/>The data and the control input changes at the instant of clock pulse</span><br/>
+<input name="q10" type="radio" value="wrong"/>The data and the control input does not change at all <br/>
+<input name="q10" type="radio" value="wrong"/>The clock input does not change at all <br/>
+<input name="q10" type="radio" value="wrong"/>None of the above <br/>
+</li></ol>
+<br/>
+<input onclick="checkQuiz()" type="button" value="check quiz"/>
+<input onclick="window.location.reload();document.quiz.reset();" type="button" value="Reset"/>
+<hr/>
+<textarea cols="80" name="output" rows="10"></textarea>
+</form>
+<!-- </font> -->
+</div>

@@ -1,0 +1,106 @@
+<div class="content" id="lab-article-section-3-content">
+<p align="justify">
+<font size="3">
+<p>
+A spice input file, also called source file, consists
+of three parts:<br/>
+1. Data statements: These statements are
+description of the components and their I
+nterconnections.<br/><br/>
+2. Control statements: These statements are
+responsible to tell SPICE simulator what type of
+analysis to perform on the circuit.<br/><br/>
+3. Output statements: These statements specify
+what outputs are to be printed or plotted.<br/><br/><br/>
+Although these statements may appear in any order,
+it is recommended that they be given in the above
+sequence. Two other statements are required: the
+title statement and the end statement. The title
+statement is the first line and can contain any
+information, while the end statement is always
+.END. The title statement must be a line or word.
+In addition, you can insert comment statements,
+which must begin with an asterisk (*) and are
+ignored by SPICE Simulator.
+
+</p></font></p><center><img src="../../Exp7_TheoryImages/1.png"/></center><br/><br/>
+<h3>1. Data Statements</h3><br/><br/>
+(A).Independent DC Sources
+<center><img src="../../Exp7_TheoryImages/2.png"/></center><br/>
+N1 is the positive terminal node.
+N2 is the negative terminal node.
+Type can be DC, AC or TRAN, depending on the
+type of analysis.
+Value gives the value of the source.
+The name of a voltage and current source must start
+with V and I, respectively.<br/>
+<center><img src="../../Exp7_TheoryImages/3.png"/></center><br/>
+The positive current direction through the current
+or voltage source is from the positive (N1) node to
+the negative (N2) node:<br/><br/>
+(B) Elements: for example MOSFETS<br/>
+<center><img src="../../Exp7_TheoryImages/4.png"/></center><br/>
+The MOS transistor name (Mname) has to start
+with a M; ND, NG, NS and NB are the node
+numbers of the Drain, Gate, Source and Bulk
+terminals, respectively. ModName is the name of
+the transistor model (NMOS or PMOS). L and W
+are the length and width of the gate (in m).<br/><br/>
+<h3>2. Commands or Control Statements:</h3><br/><br/>
+.TRAN Statement<br/>
+<center><img src="../../Exp7_TheoryImages/5.png"/></center><br/>
+
+This statement specifies the time interval over
+which the transient analysis takes place, and the
+time increments. The format is as follows:
+TSTEP is the printing increment.
+TSTOP is the final time
+TSTART is the starting time (if omitted, TSTART
+is assumed to be zero)
+TMAX is the maximum step size.
+UIC stands for Use Initial Conditions. If UIC is
+specified then simulator will use the initial
+conditions specified in the element statements.<br/><br/>
+<h3>3.Output Statements</h3><br/><br/>
+These statements will instruct Simulator what
+<br/>
+<center><img src="../../Exp7_TheoryImages/6.png"/></center><br/>
+
+output to generate. If you do not specify an output
+statement, Simulator will always calculate the DC
+operating points. The two types of outputs are the
+prints and plots. A print is a table of data points and
+a plot is a graphical representation. The format is as
+follows:<br/><br/>
+In above format TYPE specifies the type of
+analysis to be printed or plotted and can be:
+<br/>
+<center><img src="../../Exp7_TheoryImages/7.png"/></center><br/>
+
+The output variables are Y1, Y2 and can be voltage
+or currents in voltage sources. Node voltages and
+device currents can be specified as magnitude (M),
+phase (P), real (R) or imaginary (I) parts by adding
+the suffix to V or I as follows:<br/><br/><br/>
+M: Magnitude.<br/><br/>
+DB: Magnitude in dB (decibels).<br/><br/>
+P: Phase.<br/><br/>
+R: Real part.<br/><br/>
+I: Imaginary part.<br/><br/>
+<br/><center><img src="../../Exp7_TheoryImages/8.png"/></center><br/>
+
+Complete example (Inverter-Netlist):
+
+<br/><center><img src="../../Exp7_TheoryImages/9.png"/></center><br/>
+<p>
+In introduction of this experiment we have seen what is spice actually. In first experiment we have designed inverter, so as we have read in introduction that whenever you place anyting like transistor or capacitor etc., there is a code which is written at back end corresponding to the element placed on screen. So in this experiment we are going to learn what is taht code which is written in the back end, that is, we learn how to write that code directly, that is, we will learn basic inverter designing using spice coding.
+</p><br/>
+<p>The following is the code for inverter in spice along with some of the explaination.</p><br/><br/>
+<center><img src="../../spice1.jpg"/></center><br/>
+<p>Now we will be learning actually what parameters are specified by each of the element in every line in detail</p><br/>
+<h3><u>FIRST LINE</u></h3><br/>
+<p>First line of spice code is always a comment. So this line is always ignored by spice. Spice does not do any kind of processing on this line</p><br/>
+<h3><u>.INCLUDE LINE</u></h3><br/>
+<p>.include line includes the model file but you should confirm that your model file should be in your current directory in which you are working.</p><br/>
+<h3><u>LINE CORRESPONDING TO TRANSISTOR</u></h3><br/>
+</div>
